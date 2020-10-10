@@ -3,7 +3,7 @@ set -e
 source ${HTTPD_CONTAINER_SCRIPTS_PATH}/common.sh
 echo "---> Enabling s2i support in httpd24 image"
 echo "this is custom script from s2i git"
-
+config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 echo "---> Installing application source"
 cp -Rf /tmp/src/* ./
